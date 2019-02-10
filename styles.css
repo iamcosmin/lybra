@@ -1,5 +1,5 @@
 body {
-  background-color: #FF9800;
+  background-color: black;
   color: black;
 }
 .vertical-container {
@@ -13,4 +13,6 @@ body {
 }
 h1.vertical-container {
   font-size: 275%;
+  color: white;
+  font-family: 'Nunito', sans-serif;
 }
