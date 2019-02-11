@@ -3,7 +3,7 @@ body {
 }
 .vertical-container {
   height: 300px;
-  text-indent: 100px;
+  text-indent: 50px;
 }
 h1.vertical-container {
   font-size: 275%;
