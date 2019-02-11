@@ -1,0 +1,30 @@
+body {
+  background-color: #232323;
+}
+.vertical-container {
+  height: 300px;
+  text-indent: 50px;
+}
+h1 {
+  font-size: 275%;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  background-color: #232323;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 150%;
+}
+button{
+  background-color: #4f4f4f;
+  font-size: 35px;
+  border-radius: 15px;
+  color: white;
+  border-width: 0;
+  margin: 20px;
+}
