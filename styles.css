@@ -1,6 +1,7 @@
 body {
   background-color: #232323;
   overflow-y: scroll;
+  margin-bottom: 100px;
 }
 .vertical-container {
   height: 50px;
