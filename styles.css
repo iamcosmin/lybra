@@ -6,7 +6,8 @@ body {
 }
 img {
   border-radius: 25px;
-  height:
+  height: 100px;
+  width: 100px;
 }
 .vertical-container {
   height: 50px;
