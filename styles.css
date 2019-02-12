@@ -25,7 +25,7 @@ h1.vertical-container {
 .footer {
   position: fixed;
   left: 0;
-  bottom: 20px;
+  bottom: 0;
   width: 100%;
   background-color: #232323;
   color: white;
