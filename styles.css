@@ -11,13 +11,7 @@ body {
   overflow-x: hidden;
   font-family: 'Product', sans-serif;
 }
-p{
-  font-family: 'Product', sans-serif
-}
-span{
-  font-family: 'Product', sans-serif
-}
-div{
+button{
   font-family: 'Product', sans-serif
 }
 img {
@@ -27,14 +21,13 @@ img {
 }
 .vertical-container {
   height: 50px;
-  padding-left: 50px;
   display: -webkit-flex;
   display:         flex;
   -webkit-align-items: center;
           align-items: center;
   -webkit-justify-content: center;
           justify-content: center;
-  font-family: 'Product Sans Regular';
+  font-family: 'Product', sans-serif;
 }
 h1.vertical-container {
   font-size: 275%;
