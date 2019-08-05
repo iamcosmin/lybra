@@ -6,6 +6,9 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         `/index.html`,
+        `/styles.css`
+        `/icons`
+        `/ProductSans-Regular.woff`
       ])
           .then(() => self.skipWaiting());
     })
