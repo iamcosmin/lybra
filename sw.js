@@ -9,6 +9,7 @@ self.addEventListener('install', e => {
         `/styles.css`,
         `/icons`,
         `/ProductSans-Regular.woff`,
+        `/.well-known`,
       ])
           .then(() => self.skipWaiting());
     })
