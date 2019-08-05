@@ -1,8 +1,12 @@
-var cacheName = 'lybra';
+var cacheName = 'lybra-world-page';
 var filesToCache = [
   '/',
   '/index.html',
-  '/hello-world.css'
+  '/styles.css'
+  '/manifest.json'
+  '/favicon.png'
+  '/sw.js'
+  '/allo/'
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
