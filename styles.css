@@ -50,7 +50,7 @@ span:hover{
   border-right: 100px;
   border-top: 100px;
 }
-.divider {
+.spacer{
   background-color: #363636;
   border-radius: 25px;
   text-align: left;
