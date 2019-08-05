@@ -1,8 +1,18 @@
+@font-face {
+font-family: 'Product';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff');
+}
 body {
-  background-color: #232323;
+  background-color: black;
   overflow-y: scroll;
   margin-bottom: 100px;
   overflow-x: hidden;
+  font-family: 'Product', sans-serif;
+}
+button{
+  font-family: 'Product', sans-serif
 }
 img {
   border-radius: 25px;
@@ -11,12 +21,17 @@ img {
 }
 .vertical-container {
   height: 50px;
-  padding-left: 50px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-family: 'Product', sans-serif;
 }
 h1.vertical-container {
   font-size: 275%;
   color: white;
-  font-family: 'Nunito', sans-serif;
   border-left: 100px;
   border-right: 100px;
   border-top: 100px;
@@ -35,23 +50,15 @@ span:hover{
   border-right: 100px;
   border-top: 100px;
 }
-.welcome {
-  color: white;
-  font-family: 'Nunito', sans-serif;
-  background-color: #424242;
+.spacer{
+  background-color: #363636;
   border-radius: 25px;
   text-align: left;
+  color: white;
   padding-top: 10px;
   padding-bottom: 25px;
   padding-left: 25px;
   padding-right: 10px;
-
-}
-.space {
-  padding: 5px;
-}
-.welcomeh2 {
-  text-indent: 20px;
 }
 .footer {
   position: fixed;
@@ -60,7 +67,6 @@ span:hover{
   width: 100%;
   background-color: #232323;
   color: white;
-  font-family: 'Nunito', sans-serif;
   font-size: 150%;
 }
 button{

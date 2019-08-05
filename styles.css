@@ -52,11 +52,11 @@ span:hover{
 }
 .spacer{
   background-color: #363636;
-  border-radius: 25px;
+  border-radius: 35px;
   text-align: left;
   color: white;
   padding-top: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   padding-left: 25px;
   padding-right: 10px;
 }
