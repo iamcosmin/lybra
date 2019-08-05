@@ -1,9 +1,24 @@
+@font-face {
+font-family: 'Product';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff');
+}
 body {
   background-color: #232323;
   overflow-y: scroll;
   margin-bottom: 100px;
   overflow-x: hidden;
-  font-family: 'Product Sans Regular', sans-serif;
+  font-family: 'Product', sans-serif;
+}
+p{
+  font-family: 'Product', sans-serif
+}
+span{
+  font-family: 'Product', sans-serif
+}
+div{
+  font-family: 'Product', sans-serif
 }
 img {
   border-radius: 25px;
