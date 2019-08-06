@@ -1,4 +1,5 @@
-const cacheName = `lybra`;
+var version = "1.0"
+var cacheName = `lybra`;
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
