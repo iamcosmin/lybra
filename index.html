@@ -31,7 +31,7 @@
 <!-- Service worker req -->
 <script>
      if('serviceWorker' in navigator) {
-       navigator.serviceWorker.register('/sw.js')
+       navigator.serviceWorker.register('sw.js')
          .then(function() {
                console.log('Service Worker Registered');
          });
@@ -54,7 +54,7 @@
     <script>
     window.isUpdateAvailable = new Promise(function(resolve, reject) {
 	if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
-		navigator.serviceWorker.register('service-worker.js')
+		navigator.serviceWorker.register('sw.js')
 			.then(reg => {
 				reg.onupdatefound = () => {
 					const installingWorker = reg.installing;
