@@ -81,21 +81,12 @@ button{
 a {
   color:inherit;
 }
-.firstimg {
-  margin-top: 5px;
-  width: 90px;
-  height: 90px;
-  float: left;
 }
 .first {
   float: left;
 }
-.second {
-   float: left;
-   text-indent: 30px;
-}
-button.second{
-  float: right;
+.second{
+  float: center;
 }
 .clear {
   clear: both;
