@@ -1,5 +1,5 @@
-var version = '1'
-var cacheName = 'hello-world-page';
+var version = '2'
+var cacheName = 'Lybra';
 var filesToCache = [
   '/',
   '/index.html',
