@@ -81,7 +81,12 @@ button{
 a {
   color:inherit;
 }
-#temp {
-  text-indent: 20px;
-  font-size: 300%;
+.first{
+  float: left;
+}
+.second{
+  float: right;
+}
+.clear{
+  clear: both;
 }
