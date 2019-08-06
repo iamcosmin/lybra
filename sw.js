@@ -3,7 +3,9 @@ var cacheName = 'Lybra';
 var filesToCache = [
   '/',
   '/index.html',
-  '/styles.css'
+  '/styles.css',
+  '/ProductSans-Regular.woff',
+  '/manifest.json',
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
