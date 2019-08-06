@@ -1,4 +1,3 @@
-const version = "0.6.16";
 const cacheName = `lybra`;
 self.addEventListener('install', e => {
   e.waitUntil(
