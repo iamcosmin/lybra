@@ -6,6 +6,7 @@ var filesToCache = [
   '/styles.css',
   '/ProductSans-Regular.woff',
   '/manifest.json',
+  '/AppStore.png',
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');

@@ -16,14 +16,23 @@
   <body>
     <div><h1 class="vertical-container"><span>Lybra</span></h1></div>
     <div class="spacer">
-      <h2>Lybra, Singurul serviciu in care trebuie sa ai incredere.</h2>
+      <div class="firstimg"><img src="appstore.png" alt="App Store, an Apple Trademark." width="100px"></img></div>
+        <div class="second">
+          <h2>Lybra, Singurul serviciu in care trebuie sa ai incredere.</h2>
+          <h4>Lybra este un serviciu foarte simplu, fara trackere, care te ajuta in viata de zi cu zi.</h4>
+        </div>
+        <div class="clear"></div>
     </div>
-    <p></p>
+        <p></p>
     <div class="spacer">
       <h2>Acum si aplicatii!</h1>
+        <div class="first">
       <p>Acum, Lybra are si o sectiune dedicata aplicatiilor! De ce sa nu o descoperi acum?</p>
-      <div align="right">
+    </div>
+      <div class="second" align="right">
         <button onclick="location.href='/aplicatii'" value="Verifica!"> Aplicatii </button>
+      </div>
+      <div class="clear"></div>
       </div>
     </div>
   </body>
@@ -51,41 +60,5 @@
         console.log('Unable to get permission to notify.', err);
       })
     </script>
-    <script>
-    window.isUpdateAvailable = new Promise(function(resolve, reject) {
-	if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
-		navigator.serviceWorker.register('sw.js')
-			.then(reg => {
-				reg.onupdatefound = () => {
-					const installingWorker = reg.installing;
-					installingWorker.onstatechange = () => {
-						switch (installingWorker.state) {
-							case 'installed':
-								if (navigator.serviceWorker.controller) {
-									resolve(true);
-								} else {
-									resolve(false);
-								}
-								break;
-						}
-					};
-				};
-			})
-			.catch(err => console.error('[SW ERROR]', err));
-	}
-});
-</script>
-<script>
-window['isUpdateAvailable']
-	.then(isAvailable => {
-		if (isAvailable) {
-			const toast = this.toastCtrl.create({
-				message: 'New Update available! Reload the webapp to see the latest juicy changes.',
-				position: 'bottom',
-				showCloseButton: true,
-			});
-			toast.present();
-		}
-	});
-  </script>
+
 </html>
