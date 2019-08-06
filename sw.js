@@ -1,30 +1,25 @@
-var version = "1.0"
-var cacheName = `lybra`;
-self.addEventListener('install', e => {
+var version = '1'
+var cacheName = 'hello-world-page';
+var filesToCache = [
+  '/',
+  '/index.html',
+  '/styles.css'
+];
+self.addEventListener('install', function(e) {
+  console.log('[ServiceWorker] Install');
   e.waitUntil(
-    caches.open(cacheName).then(cache => {
-      return cache.addAll([
-        `/`,
-        `/index.html`,
-        `/styles.css`,
-        `/icons`,
-        `/ProductSans-Regular.woff`,
-        `/.well-known`,
-      ])
-          .then(() => self.skipWaiting());
+    caches.open(cacheName).then(function(cache) {
+      console.log('[ServiceWorker] Caching app shell');
+      return cache.addAll(filesToCache);
     })
   );
 });
-
-self.addEventListener('activate', event => {
+self.addEventListener('activate',  event => {
   event.waitUntil(self.clients.claim());
 });
-
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.open(cacheName)
-      .then(cache => cache.match(event.request, {ignoreSearch: true}))
-      .then(response => {
+    caches.match(event.request, {ignoreSearch:true}).then(response => {
       return response || fetch(event.request);
     })
   );
