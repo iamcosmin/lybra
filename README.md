@@ -19,11 +19,10 @@ RoBattles: https://lybra.netlify.com/aplicatii/robattles (disponibil doar pe and
 Stadiu de lucru:
 
 
-  Battle Stars: iOS: beta; Android: Nelansat
-  
+  Battle Stars: iOS: beta; Android: beta
+
   Allo: beta nelansat
-  
+
   Mine&Craft: ambele nelansate
-  
+
   RoBattles: nelansat
-  

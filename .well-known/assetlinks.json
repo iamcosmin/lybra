@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "xyz.appmaker.qgcvpe",
+      "package_name": "com.cosmin.lybra",
       "sha256_cert_fingerprints": ["81:2F:8F:58:BA:9A:54:BC:3B:1F:8C:1D:88:98:58:D7:C4:7F:D9:38:BB:3D:93:A6:87:01:EC:42:11:7E:09:E4"]
     }
   }
