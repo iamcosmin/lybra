@@ -10,6 +10,9 @@ body {
   margin-bottom: 100px;
   overflow-x: hidden;
   font-family: 'Product', sans-serif;
+  -webkit-filter: blur(0.000001px);
+  -webkit-font-smoothing: antialised;
+  margin: 0;
 }
 button{
   font-family: 'Product', sans-serif
@@ -52,13 +55,15 @@ span:hover{
 }
 .spacer{
   background-color: #363636;
-  border-radius: 25px;
+  border-radius: 35px;
   text-align: left;
   color: white;
   padding-top: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   padding-left: 25px;
   padding-right: 10px;
+  -webkit-filter: blur(0.000001px);
+  -webkit-font-smoothing: antialised;
 }
 .footer {
   position: fixed;
@@ -71,13 +76,23 @@ span:hover{
 }
 button{
   background-color: #004ecc;
-  font-size: 25px;
+  font-size: 23px;
   border-radius: 15px;
-  border-width: 5px;
   border-color: #004ecc;
   color: white;
-  align: right;
+  display: inline-block;
+  margin-right: 10px
 }
 a {
   color:inherit;
+}
+}
+.first {
+  float: left;
+}
+.second{
+  float: left;
+}
+.clear {
+  clear: both;
 }

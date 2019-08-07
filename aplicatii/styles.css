@@ -4,12 +4,6 @@ font-style: normal;
 font-weight: normal;
 src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff');
 }
-/* SUPREME CLASS */
-.inline {
-  display: inline-block;
-  width: 50%;
-}
-/* END OF SUPREME CLASS */
 body {
   background-color: black;
   overflow-y: scroll;
@@ -18,6 +12,10 @@ body {
   font-family: 'Product', sans-serif;
   -webkit-filter: blur(0.000001px);
   -webkit-font-smoothing: antialised;
+  margin: 0;
+}
+button{
+  font-family: 'Product', sans-serif
 }
 img {
   border-radius: 25px;
@@ -78,14 +76,23 @@ span:hover{
 }
 button{
   background-color: #004ecc;
-  font-family: 'Product', sans-serif;
-  border-radius: 25px;
-  font-size: 22px;
+  font-size: 23px;
+  border-radius: 15px;
   border-color: #004ecc;
   color: white;
   display: inline-block;
-  justify-content: space-between;
+  margin-right: 10px
 }
 a {
   color:inherit;
+}
+}
+.first {
+  float: left;
+}
+.second{
+  float: left;
+}
+.clear {
+  clear: both;
 }
