@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="black"/>
-    <title>Lybra</title>
+    <title>Lybra Store</title>
     <link rel="icon" sizes="192x192" href="icon.png">
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="ios-icon.png">
@@ -16,9 +16,17 @@
   <header>
   <center>
   <div class="top">
-  <p>
+  <a href="https://lybra.netlify.com"><p>
     Lybra Store
   </p>
+  <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+    </label>
+    <em>Enable Dark Mode!</em>
+  </div>
+</a>
   </div>
   </center>
   </header>
@@ -28,14 +36,18 @@
     Social
   </p>
   <div class="overflow">
-  <div class="appcontainer">
-    <img src="appstore.png" width="70">
+    <a href="http://lybra.netlify.com/aplicatii/allo">
+<div class="appcontainer">
+    <img src="allo.png" width="70">
     <p>Allo</p>
     </div>
+  </a>
+  <a href="http://lybra.netlify.com/aplicatii/allolite">
     <div>
-      <img src="appstore.png" width="70">
+      <img src="allo.png" width="70">
       <p>Allo Lite</p>
       </div>
+    </a>
     </div>
     </div>
     <div class="grup">
@@ -43,19 +55,63 @@
     Jocuri
   </p>
   <div class="overflow">
+    <a href="http://lybra.netlify.com/aplicatii/battlestars/">
   <div class="appcontainer">
-    <img src="appstore.png" width="70">
+    <img src="battlestars.png" width="70">
     <p>Battle Stars</p>
     </div>
+  </a>
+    <a href="http://lybra.netlify.com/aplicatii/nullsbrawl">
     <div class="appcontainer">
-      <img src="appstore.png" width="70">
+      <img src="battlestars.png" width="70">
       <p>Null's Brawl</p>
       </div>
+    </a>
+    <a href="http://lybra.netlify.com/aplicatii/mineycraft">
     <div>
       <img src="appstore.png" width="70">
-      <p>Mine & Craft</p>
+      <p>In curand...</p>
       </div>
+    </a>
       <div></div>
     </div>
     </div>
+    <div class="grup">
+      <p class="indent20">
+        Multimedia
+      </p>
+      <div class="overflow">
+        <div class="appcontainer">
+          <img src="appstore.png" width="70">
+          <p> Lybra Music </p>
+        </div>
+      </div>
+    </div>
   </body>
+  </html>
+  <script>
+  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); //add this
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light'); //add this
+    }
+}
+
+</script>
