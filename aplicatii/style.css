@@ -13,7 +13,7 @@ src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff
   overflow-y: hidden;
   white-space: nowrap;
 }
-:root {
+[data-theme="light"] {
   --font: black;
   --background: white;
 }
