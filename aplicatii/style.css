@@ -55,16 +55,7 @@ img {
 /* Containers */
 .appcontainer {
   float: left;
-  width: 140px;
-  text-align: center;
+  width: 120px;
+  text-align: left;
   font-size: 17px;
-}
-.cc {
-  text-indent: 10px;
-}
-.zero {
-  margin: 0 auto;
-}
-.test {
-  margin-left: 100px;
 }
