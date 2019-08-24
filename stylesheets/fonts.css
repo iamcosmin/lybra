@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Regular';
+  src:  url('/fonts/Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bold';
+  src:  url('/fonts/Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BoldItalic';
+  src:  url('/fonts/BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Italic';
+  src:  url('/fonts/Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Medium';
+  src:  url('/fonts/Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MediumItalic';
+  src:  url('/fonts/MediumItalic.ttf') format('truetype');
+}

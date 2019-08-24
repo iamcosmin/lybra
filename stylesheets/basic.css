@@ -39,7 +39,7 @@ header{
 body{
   color: var(--font);
   background-color: var(--background);
-  font-family: 'Normal', sans-serif;
+  font-family: 'Regular', sans-serif;
   padding: 5px;
   text-indent: 10px;
 }
