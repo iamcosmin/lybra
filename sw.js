@@ -3,10 +3,9 @@ var cacheName = 'LybraNew';
 var filesToCache = [
   '/',
   '/index.html',
-  '/styles.css',
-  '/ProductSans-Regular.woff',
-  '/manifest.json',
-  '/AppStore.png',
+  '/fonts/',
+  '/stylesheets/',
+  '/preferinte/'
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
