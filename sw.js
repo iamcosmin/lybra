@@ -1,5 +1,5 @@
-var version = '2'
-var cacheName = 'Lybra';
+var version = '3'
+var cacheName = 'LybraNew';
 var filesToCache = [
   '/',
   '/index.html',
