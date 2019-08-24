@@ -24,7 +24,7 @@ body{
   margin-left: 10px;
 }
 .top{
-  display: table;
+  display: inline-block;
   width: 95%;
   height: inherit;
   position: inherit;
@@ -36,6 +36,12 @@ body{
   -moz-box-shadow: -1px 0px 10px 1px rgba(0,0,0,0.28);
   box-shadow: -1px 0px 10px 1px rgba(0,0,0,0.28);
   margin-bottom: 20px;
+}
+.top i {
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: -100px;
 }
 .appfirst {
   margin-left: 10px;
@@ -64,6 +70,7 @@ body{
   border: 0;
   color: white;
   background-color: #de1b1b;
+  font-size: 16px;
 }
 a{color: inherit; text-decoration: none; box-shadow: none;  box-decoration-break: none;}
 a:link{color: inherit;}
