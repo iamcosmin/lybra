@@ -2,12 +2,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-@font-face {
-font-family: 'Normal';
-font-style: normal;
-font-weight: normal;
-src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff');
-}
 .height{
   height: 10px;
 }
@@ -33,7 +27,7 @@ src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff
 header{
   color: var(--font);
   background-color: var(--background);
-  font-family: 'Normal', sans-serif;
+  font-family: 'Regular', sans-serif;
   top: 0;
 }
 body{

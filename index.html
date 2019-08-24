@@ -9,52 +9,52 @@
     <link rel="icon" sizes="192x192" href="icon.png">
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="ios-icon.png">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/oldbasic.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/fonts/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/fonts.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/basic.css" media="all">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/icons/favicon.png"/>
-  </head>
-  <body>
-    <div><h1 class="vertical-container"><span>Lybra</span></h1></div>
-    <div class="spacer">
-        <div class="second">
-          <h2>Lybra, Singurul serviciu in care trebuie sa ai incredere.</h2>
-          <p>Lybra este un serviciu foarte simplu, fara trackere, care te ajuta in viata de zi cu zi.</p>
-        </div>
-        <div class="clear"></div>
-    </div>
-        <p></p>
-    <div class="spacer">
-      <h2>Acum si aplicatii!</h2>
-      <p>Acum, Lybra are si o sectiune dedicata aplicatiilor! De ce sa nu o descoperi acum?</p>
-      <div align="right">
-        <button onclick="location.href='/aplicatii'" value="Verifica!"> Aplicatii </button>
-      </div>
-      </div>
-    </div>
-  </body>
-</center>
-<!-- Service worker req -->
-<script>
-     if('serviceWorker' in navigator) {
-       navigator.serviceWorker.register('sw.js')
-         .then(function() {
-               console.log('Service Worker Registered');
-         });
-     }
-   </script>
-   <script>
-      const messaging = firebase.messaging();
-      messaging.requestPermission()
-      .then(function() {
-        console.log('Notification permission granted.');
-        return messaging.getToken();
-      })
-      .then(function(token) {
-        console.log(token);
-      })
-      .catch(function(err) {
-        console.log('Unable to get permission to notify.', err);
-      })
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $( "a" ).on( "click", function() {
+    $( this ).css( "box-shadow", "none" );
+  });
     </script>
-
-</html>
+  </head>
+  <header>
+    <center>
+  <div class="top">
+    <a href="https://lybra.netlify.com/">
+</a>
+  <p>
+    Lybra
+  </p>
+</div>
+<div class="horizontalbar">
+  <div class="bar">
+  <p class="elementofbar">Acasă</p>
+</div>
+  <div class="bar">
+    <p class="elementofbar">Opțiuni</p>
+</div>
+</div>
+</center>
+  </header>
+  <body>
+    <hr></hr>
+    <h1> Bine ați venit.</h1>
+    <h3> Ne bucuram ca sunteti aici!</h3>
+    <hr></hr>
+    <h1>Doriti niste aplicatii?</h1>
+    <p> Daca da, puteti accesa sectiunea noastra dedicata aplicatiilor. </p>
+    <button onclick="location.href='https://lybra.netlify.com/aplicatii'"> Descarca acum! </button>
+    <hr></hr>
+    <h1> Aplicatiile dvs.</h1>
+    <h1> ... trebuie actualizate?</h1>
+    <p> Sunteti in locul potrivit. </p>
+    <button onclick="location.href='https://lybra.netlify.com/comingsoon.html'"> In curand... </button>
+    <hr></hr>
+    </body>
+    <footer>
+      <p class="p"> Lybra LLC, ajutor calificat. Copyright 2019.</p>
+      <p class="p"> Orice element de design furat va fi pedepsit conform legii.</p>
+      <footer>
