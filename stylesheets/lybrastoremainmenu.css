@@ -2,12 +2,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-@font-face {
-font-family: 'Normal';
-font-style: normal;
-font-weight: normal;
-src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff');
-}
 .height{
   height: 10px;
 }
@@ -19,27 +13,12 @@ src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff
   overflow-y: hidden;
   white-space: nowrap;
 }
-:root {
-  --font: black;
-  --background: white;
-  --search: white;
-}
-[data-theme="dark"]{
-  --font: white;
-  --background: black;
-  --search: black
-}
-}
 header{
-  color: var(--font);
-  background-color: var(--background);
-  font-family: 'Normal', sans-serif;
+  font-family: 'Regular', sans-serif;
   top: 0;
 }
 body{
-  color: var(--font);
-  background-color: var(--background);
-  font-family: 'Normal', sans-serif;
+  font-family: 'Regular', sans-serif;
   padding: 5px;
   text-indent: 10px;
 }
@@ -47,11 +26,9 @@ img {
   border-radius: 10px;
 }
 .top{
-  background-color: var(--search);
   display: table;
   width: 95%;
   height: 4px;
-  color: #999999;
   text-align: center;
   font-size: 20px;
   border-radius: 10px;
@@ -85,11 +62,7 @@ a:link{color: inherit;}
 a:visited{color: inherit;}
 a:hover{background-color: inherit; color: inherit;}
 a:active{background-color: inherit; color: inherit;}
-hr{border-radius: 7px 7px 7px 7px; border-bottom: 15px; border-color: #de1b1b;}
-
-.horizontalbar{
-
-}
+hr{border-radius: 7px 7px 7px 7px; border-bottom: 15px;}
 .elementofbar{
   text-indent: -1px;
   text-align: center;
@@ -98,11 +71,9 @@ hr{border-radius: 7px 7px 7px 7px; border-bottom: 15px; border-color: #de1b1b;}
   border-left: 0;
   border-right: 0;
   border-bottom: 5px;
-  border-color: #de1b1b;
   border-style: solid;
   border-radius: 5px;
   width: 33%;
-  color: #de1b1b;
 }
 .bar{
   width: 50%;
