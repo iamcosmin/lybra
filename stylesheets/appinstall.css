@@ -3,11 +3,11 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 header{
-  font-family: 'Normal', sans-serif;
+  font-family: 'Regular', sans-serif;
   top: 0;
 }
 body{
-  font-family: 'Normal', sans-serif;
+  font-family: 'Regular', sans-serif;
   padding: 5px;
   text-indent: 10px;
   margin-left: 10px;
@@ -50,6 +50,7 @@ body{
   text-indent: 15px;
 }
 .install button{
+  font-family: 'Regular', sans-serif;
   width: 95%;
   height: 36px;
   border-radius: 5px;
