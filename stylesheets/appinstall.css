@@ -62,3 +62,21 @@ a:link{color: inherit;}
 a:visited{color: inherit;}
 a:hover{background-color: inherit; color: inherit;}
 a:active{background-color: inherit; color: inherit;}
+.elementofbar{
+  text-indent: -1px;
+  text-align: center;
+  align-items: center;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5px;
+  border-color: #de1b1b;
+  border-style: solid;
+  border-radius: 5px;
+  width: 33%;
+  color: #de1b1b;
+}
+.bar{
+  width: 50%;
+  float: left;
+}
