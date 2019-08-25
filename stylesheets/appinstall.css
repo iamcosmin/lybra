@@ -80,3 +80,6 @@ a:active{background-color: inherit; color: inherit;}
   width: 50%;
   float: left;
 }
+.horizontalbar {
+  margin-top: -10px;
+}
