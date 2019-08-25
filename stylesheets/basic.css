@@ -25,6 +25,7 @@ body{
   text-indent: 10px;
   -webkit-filter: blur(0.000001px);
   -webkit-font-smoothing: antialised;
+  margin-left: 30px;
 }
 img {
   border-radius: 10px;
@@ -115,7 +116,7 @@ button {
   font-family: 'Medium', sans-serif;;
 }
 .install button{
-  width: 95%;
+  width: 99%;
   height: 36px;
   border-radius: 5px;
   border: 0;
