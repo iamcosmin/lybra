@@ -36,3 +36,10 @@ button {
 .p {
   color: var(--credite);
 }
+.negru {
+  color: var(--scris);
+}
+.install button{
+  background-color: var(--buton);
+  color: var(--textbuton);
+}
