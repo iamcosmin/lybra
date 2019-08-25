@@ -25,7 +25,6 @@ body{
   text-indent: 10px;
   -webkit-filter: blur(0.000001px);
   -webkit-font-smoothing: antialised;
-  margin-left: 30px;
 }
 img {
   border-radius: 10px;
@@ -82,26 +81,6 @@ hr{height:1px; border-radius: 25px;}
   width: 33%;
   color: #de1b1b;
 }
-.appfirst {
-  margin-left: 10px;
-  float: left;
-}
-.title h2 {
-  margin-top: 30px;
-  margin-bottom: 0px;
-}
-.verde{
-  color: #de1b1b;
-  font-size: 16px;
-  margin-top: -19px;
-  text-indent: 15px;
-}
-.negru{
-  color: black;
-  font-size: 15px;
-  margin-top: -13px;
-  text-indent: 15px;
-}
 .bar{
   width: 50%;
   float: left;
@@ -115,15 +94,7 @@ button {
   border: 0;
   font-family: 'Medium', sans-serif;;
 }
-.install button{
-  width: 99%;
-  height: 36px;
-  border-radius: 5px;
-  border: 0;
-  color: white;
-  background-color: #de1b1b;
-  font-size: 16px;
-}
+
 .p {
   color: #b3b3b3;
   font-size: 12px;
