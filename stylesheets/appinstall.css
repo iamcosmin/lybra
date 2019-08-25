@@ -81,5 +81,6 @@ a:active{background-color: inherit; color: inherit;}
   float: left;
 }
 .horizontalbar {
-  margin-top: -10px;
+  margin-top: -20px;
+  margin-bottom: 5px;
 }
