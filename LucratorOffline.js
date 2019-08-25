@@ -1,4 +1,4 @@
-const PRECACHE = 'Lybra versiunea 4.3';
+const PRECACHE = 'Lybra versiunea 4.5';
 const RUNTIME = 'Runtime 0.1';
 
 // A list of local resources we always want to be cached.

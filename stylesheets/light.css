@@ -11,6 +11,7 @@
   --credite: #b3b3b3;
   --rosulybra: #de1b1b;
 }
+@media (prefers-color-scheme: light) {
 header{
   color: var(--scris);
   background-color: var(--fundal);
@@ -46,4 +47,5 @@ button {
 }
 .verde{
   color: var(--rosulybra);
+}
 }
