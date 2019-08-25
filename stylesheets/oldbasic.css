@@ -90,3 +90,117 @@ a {
 .clear {
   clear: both;
 }
+/*
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.height{
+  height: 10px;
+}
+.floatleft{
+  float: left;
+}
+.overflow {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+:root {
+  --font: black;
+  --background: white;
+  --search: white;
+}
+[data-theme="dark"]{
+  --font: white;
+  --background: black;
+  --search: black
+}
+}
+header{
+  color: var(--font);
+  background-color: var(--background);
+  font-family: 'Regular', sans-serif;
+  top: 0;
+}
+body{
+  color: var(--font);
+  background-color: var(--background);
+  font-family: 'Regular', sans-serif;
+  padding: 5px;
+  text-indent: 10px;
+}
+img {
+  border-radius: 10px;
+}
+.top{
+  background-color: var(--search);
+  display: table;
+  width: 95%;
+  height: 4px;
+  color: #999999;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 0px 10px 1px rgba(0,0,0,0.28);
+  -moz-box-shadow: -1px 0px 10px 1px rgba(0,0,0,0.28);
+  box-shadow: -1px 0px 10px 1px rgba(0,0,0,0.28);
+}
+.top i {
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: -100px;
+}
+.grup{
+  margin-left: 10px;
+}
+.indent20{
+  font-size: 25px;
+}
+
+Containers 
+.appcontainer {
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+  font-size: 18px;
+}
+
+a{color: inherit; text-decoration: none; box-shadow: none;  box-decoration-break: none;}
+a:link{color: inherit;}
+a:visited{color: inherit;}
+a:hover{background-color: inherit; color: inherit;}
+a:active{background-color: inherit; color: inherit;}
+hr{height:1px; background-color: #d6d6d6; border-radius: 25px;}
+.elementofbar{
+  text-indent: -1px;
+  text-align: center;
+  align-items: center;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5px;
+  border-color: #de1b1b;
+  border-style: solid;
+  border-radius: 5px;
+  width: 33%;
+  color: #de1b1b;
+}
+.bar{
+  width: 50%;
+  float: left;
+}
+button {
+  width: 100%;
+  height: 35px;
+  background-color: #de1b1b;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-family: 'Medium', sans-serif;;
+}
+.p {
+  color: #b3b3b3;
+  font-size: 12px;
+}

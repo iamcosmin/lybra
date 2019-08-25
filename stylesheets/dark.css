@@ -1,0 +1,38 @@
+:root {
+  --scris: white;
+  --fundal: black;
+  --fundallogo: #4f4f4f;
+  --textlogo: white;
+  --despartitor: #2e2e2e;
+  --navigator: #de1b1b;
+  --textnavigator: #de1b1b;
+  --buton: #de1b1b;
+  --textbuton: black;
+  --credite: #b3b3b3;
+}
+header{
+  color: var(--scris);
+  background-color: var(--fundal);
+}
+body{
+  color: var(--scris);
+  background-color: var(--fundal);
+}
+.top{
+  background-color: var(--fundallogo);
+  color: var(--textlogo);
+}
+hr{
+  background-color: var(--despartitor);
+}
+.elementofbar{
+  border-color: var(--navigator);
+  color: var(--textnavigator);
+}
+button {
+  background-color: var(--buton);
+  color: var(--textbuton);
+}
+.p {
+  color: var(--credite);
+}
