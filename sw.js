@@ -1,11 +1,11 @@
-var version = '3'
-var cacheName = 'LybraNew';
+var cacheName = 'Lybra2';
 var filesToCache = [
   '/',
   '/index.html',
   '/fonts/',
   '/stylesheets/',
-  '/preferinte/'
+  '/preferinte/',
+  '/404.html',
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
