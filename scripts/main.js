@@ -15,8 +15,6 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   pushButton.textContent = 'Push Not Supported';
 }
 
-messaging.usePublicVapidKey("BOCpB0jTfrq3F2qtSVBvkT9wxvExrGAaBCuRaDcF9PGOQY-wBIdlKyXbtf-B8RjlMwMQfpzELVN-gDOhAxcbsIc")
-
 Notification.requestPermission().then((permission) => {
   if (permission === 'granted') {
     console.log('Multumim!');
