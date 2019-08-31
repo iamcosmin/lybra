@@ -14,6 +14,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   console.warn('Push messaging is not supported');
   pushButton.textContent = 'Push Not Supported';
 }
+navigator.serviceWorker.register('/scripts/firebase-messaging-sw.js')
 
 Notification.requestPermission().then((permission) => {
   if (permission === 'granted') {
