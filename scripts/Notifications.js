@@ -1,3 +1,9 @@
+const check = () => {
+  if (!('PushManager' in window)) {
+  throw new Error('No Push API Support!')
+}
+}
+
 const showLocalNotification = (title, body, swRegistration) => {
 
     const options = {
