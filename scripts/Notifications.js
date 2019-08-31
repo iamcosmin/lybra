@@ -20,6 +20,6 @@ const showLocalNotification = (title, body, swRegistration) => {
 const main = async () => {
     check();
     const swRegistration = await registerServiceWorker();
-    showLocalNotification('This is title', 'this is the message', swRegistration);
+    showLocalNotification('Sarna', options, swRegistration);
 }
 main();
