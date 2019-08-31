@@ -1,9 +1,9 @@
-const PRECACHE = 'Lybra versiunea 4.8';
-const RUNTIME = 'Runtime 0.4';
+const PRECACHE = 'Lybra versiunea 5.0 beta';
+const RUNTIME = 'Runtime 0.5 alpha';
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
-  'index.html',
+  '/index.html',
   '/stylesheets/basic.css',
   '/stylesheets/light.css',
   '/stylesheets/dark.css',
