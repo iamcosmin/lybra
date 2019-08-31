@@ -23,7 +23,7 @@ Notification.requestPermission().then((permission) => {
   if (permission === 'granted') {
     console.log('Multumim!');
   } else {
-    alert('O sa va tinem minte parerea.'');
+    alert('O sa va tinem minte parerea.');
   }
 });
 
@@ -57,4 +57,16 @@ messaging.onTokenRefresh(() => {
     console.log('Unable to retrieve refreshed token ', err);
     showToken('Unable to retrieve refreshed token ', err);
   });
+});
+
+
+
+
+
+
+
+
+messaging.onMessage((payload) => {
+  console.log('Message received. ', payload);
+  // ...
 });
