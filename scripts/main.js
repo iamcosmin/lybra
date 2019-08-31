@@ -6,7 +6,6 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     console.log('Service Worker is registered', swReg);
 
     swRegistration = swReg;
-    initializeUI()
   })
   .catch(function(error) {
     console.error('Service Worker Error', error);
@@ -16,7 +15,6 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   pushButton.textContent = 'Push Not Supported';
 }
 
-const messaging = firebase.messaging();
 messaging.usePublicVapidKey("BOCpB0jTfrq3F2qtSVBvkT9wxvExrGAaBCuRaDcF9PGOQY-wBIdlKyXbtf-B8RjlMwMQfpzELVN-gDOhAxcbsIc")
 
 Notification.requestPermission().then((permission) => {
