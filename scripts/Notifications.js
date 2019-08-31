@@ -1,3 +1,7 @@
+const registerServiceWorker = async () => {
+  const swRegistration = await navigator.serviceWorker.register('/scripts/ServiceWorker.js')
+  return swRegistration
+}
 const check = () => {
   if (!('PushManager' in window)) {
   throw new Error('No Push API Support!')
