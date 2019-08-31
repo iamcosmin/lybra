@@ -14,16 +14,9 @@
     <link rel="stylesheet" href="/stylesheets/dark.css" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="/stylesheets/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+    <script src="/scripts/main.js"></script>
     <link rel="shortcut icon" type="image/png" href="/icons/favicon.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-    navigator.serviceWorker.register('/LucratorOffline.js')
-            .then(function(reg) {
-                console.log('Lucratorul offline functioneaza perfect!');
-            }).catch(function(error) {
-                console.log('Lucratorul offline nu lucreaza. Uite o eroare: ' + error);
-            });
-    </script>
   </head>
   <header>
     <center>
