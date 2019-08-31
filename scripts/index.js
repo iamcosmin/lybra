@@ -1,20 +1,18 @@
 if ('serviceWorker' in navigator && 'PushManager' in window) {
   console.log('Service Worker and Push is supported');
 
-  navigator.serviceWorker.register('/scripts/Lucrator.js')
+  navigator.serviceWorker.register('/scripts/ServiceWorker.js')
   .then(function(swReg) {
-    console.log('Service Worker is registered', swReg);
+    alert('Service Worker is registered', swReg);
 
     swRegistration = swReg;
   })
   .catch(function(error) {
-    console.error('Service Worker Error', error);
+    alert('Service Worker Error', error);
   });
 } else {
-  console.warn('Push messaging is not supported');
-  pushButton.textContent = 'Push Not Supported';
+  alert('Push messaging is not supported');
 }
-navigator.serviceWorker.register('/scripts/firebase-messaging-sw.js')
 
 Notification.requestPermission().then((permission) => {
   if (permission === 'granted') {
