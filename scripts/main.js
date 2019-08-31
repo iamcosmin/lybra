@@ -17,7 +17,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
 
 Notification.requestPermission().then((permission) => {
   if (permission === 'granted') {
-    console.log('Multumim!');
+    alert('Multumim!');
   } else {
     alert('O sa va tinem minte parerea.');
   }
