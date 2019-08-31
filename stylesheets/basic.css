@@ -99,3 +99,6 @@ button {
   color: #b3b3b3;
   font-size: 12px;
 }
+.headerbutton {
+  float: left;
+}
