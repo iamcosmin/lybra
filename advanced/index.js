@@ -5,7 +5,7 @@ const webpush = require('web-push')
 const app = express()
 app.use(cors())
 app.use(bodyParser.json())
-const port = 4000
+const port = 9876
 app.get('/', (req, res) => res.send('Hello World!'))
 const dummyDb = { subscription: null } //dummy in memory store
 const saveToDatabase = async subscription => {
