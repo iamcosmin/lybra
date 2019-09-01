@@ -4,7 +4,7 @@
   "description": "Just a regular site",
   "main": "/advanced/index.js",
   "scripts": {
-    "build": "node /advanced/index.js"
+    "build": "node advanced/index.js"
   },
   "repository": {
     "type": "git",
