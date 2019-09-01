@@ -2,7 +2,7 @@
   "name": "lybrafornetlify",
   "version": "1.0.0",
   "description": "Just a regular site",
-  "main": "index.js",
+  "main": "/advanced/index.js",
   "scripts": {
     "test": "command"
   },
