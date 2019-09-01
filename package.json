@@ -4,7 +4,7 @@
   "description": "Just a regular site",
   "main": "/advanced/index.js",
   "scripts": {
-    "test": "command"
+    "build": "npm install preact-cli && preact build"
   },
   "repository": {
     "type": "git",
