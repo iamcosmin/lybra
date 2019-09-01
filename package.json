@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Just a regular site",
   "main": "/advanced/index.js",
+  "scripts": {
+    "build": "node /advanced/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "none"
