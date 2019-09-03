@@ -1,5 +1,5 @@
-const PRECACHE = 'Lybra 1.0 release';
-const RUNTIME = 'Runtime 1.0 release';
+const PRECACHE = 'Lybra 1.1 release';
+const RUNTIME = 'Runtime 1.1 release';
 const PRECACHE_URLS = [
   '/index.html',
   '/stylesheets/basic.css',
