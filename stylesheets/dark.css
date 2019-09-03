@@ -1,8 +1,6 @@
 :root {
   --scris: white;
   --fundal: black;
-  --fundallogo: #4f4f4f;
-  --textlogo: white;
   --despartitor: #2e2e2e;
   --navigator: #de1b1b;
   --textnavigator: #de1b1b;
@@ -21,8 +19,8 @@
     background-color: var(--fundal);
   }
   .top{
-    background-color: var(--fundallogo);
-    color: var(--textlogo);
+    background-color: var(--fundal);
+    color: var(--scris);
   }
   hr{
     background-color: var(--despartitor);

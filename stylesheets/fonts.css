@@ -22,3 +22,7 @@
   font-family: 'MediumItalic';
   src:  url('/fonts/MediumItalic.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Normal';
+  src: url('/fonts/GoogleSans.woff2'); format('woff2');
+}

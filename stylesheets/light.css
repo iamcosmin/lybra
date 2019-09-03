@@ -1,9 +1,7 @@
 :root {
   --scris: black;
   --fundal: white;
-  --fundallogo: white;
-  --textlogo: #999999;
-  --despartitor: #ebebeb;
+  --despartitor: #f5f5f5;
   --navigator: #de1b1b;
   --textnavigator: #de1b1b;
   --buton: #de1b1b;
@@ -21,11 +19,8 @@ body{
   background-color: var(--fundal);
 }
 .top{
-  background-color: var(--fundallogo);
-  color: var(--textlogo);
-}
-hr{
-  background-color: var(--despartitor);
+  background-color: var(--fundal);
+  color: var(--scris);
 }
 .elementofbar{
   border-color: var(--navigator);
