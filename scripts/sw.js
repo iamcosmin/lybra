@@ -3,6 +3,7 @@ const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
+  '/',
   '/index.html',
   '/stylesheets/basic.css',
   '/stylesheets/light.css',
@@ -13,7 +14,7 @@ const PRECACHE_URLS = [
   '/fonts/Italic.ttf',
   '/fonts/Medium.ttf',
   '/fonts/MediumItalic.ttf',
-  '/fonts/Regular.ttf'
+  '/fonts/Regular.ttf',
 ];
 
 // The install handler takes care of precaching the resources we always need.
@@ -43,6 +44,7 @@ self.addEventListener('activate', event => {
 // If no response is found, it populates the runtime cache with the response
 // from the network before returning it to the page.
 self.addEventListener('fetch', event => {
+  alert('Se instaleaza aplicatia, va rugam asteptati...')
   // Skip cross-origin requests, like those for Google Analytics.
   if (event.request.url.startsWith(self.location.origin)) {
     event.respondWith(
