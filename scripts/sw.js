@@ -1,10 +1,9 @@
-const PRECACHE = 'precache-v1';
-const RUNTIME = 'runtime';
+const PRECACHE = 'Fonts and Stylesheets';
+const RUNTIME = 'Runtime 1.0';
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
   '/',
-  '/index.html',
   '/stylesheets/basic.css',
   '/stylesheets/light.css',
   '/stylesheets/dark.css',
