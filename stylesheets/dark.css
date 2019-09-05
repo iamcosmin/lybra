@@ -36,14 +36,14 @@
   .p {
     color: var(--credite);
   }
-  .negru {
+  .basic {
     color: var(--scris);
   }
   .install button{
     background-color: var(--buton);
     color: var(--textbuton);
   }
-  .verde{
+  .creator{
     color: var(--rosulybra);
   }
 

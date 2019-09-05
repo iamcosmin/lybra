@@ -9,52 +9,53 @@ header{
 body{
   font-family: 'Regular', sans-serif;
   padding: 5px;
-  text-indent: 10px;
   margin-left: 10px;
+  text-indent: 10px;
+  -webkit-filter: blur(0.000001px);
+  -webkit-font-smoothing: antialised;
 }
 img {
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .top{
-  display: inline-block;
+  display: table;
   width: 95%;
-  height: inherit;
-  position: inherit;
-  text-align: center;
+  height: 4px;
+  text-align: left;
   font-size: 20px;
-  border-radius: 10px;
-  -webkit-box-shadow: -1px 0px 10px 1px rgba(0,0,0,0.28);
-  -moz-box-shadow: -1px 0px 10px 1px rgba(0,0,0,0.28);
-  box-shadow: -1px 0px 10px 1px rgba(0,0,0,0.28);
-  margin-bottom: 20px;
+}
+.top h3 {
+  text-indent: 40px;
 }
 .top i {
-  float: left;
-  margin-left: 10px;
-  margin-top: 20px;
-  margin-bottom: -100px;
+  float: right;
+  margin-right: 10px;
+  margin-top: -43.5px;
+  width: 5%;
+  font-size: 22.5px;
 }
 .appfirst {
   margin-left: 10px;
   float: left;
 }
-.title h2 {
+.title h1 {
   margin-top: 30px;
   margin-bottom: 0px;
 }
-.verde{
-  font-size: 16px;
+.creator{
+  font-size: 20px;
   margin-top: -19px;
-  text-indent: 15px;
+  text-indent: 17px;
 }
-.negru{
-  font-size: 15px;
-  margin-top: -13px;
-  text-indent: 15px;
+.basic{
+  font-size: 20px;
+  margin-top: -17px;
+  text-indent: 17px;
 }
 .install button{
   font-family: 'Regular', sans-serif;
-  width: 95%;
+  width: 98.5%;
   height: 36px;
   border-radius: 5px;
   border: 0;
