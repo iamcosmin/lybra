@@ -79,3 +79,14 @@ button {
 .headerbutton {
   float: left;
 }
+.parent {
+  margin: auto;
+  width: 50%;
+  height: 20%%;
+}
+.centertop {
+  margin-top: 40%
+}
+.centerbottom {
+  margin-bottom:40%
+}
