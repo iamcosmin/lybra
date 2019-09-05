@@ -7,7 +7,7 @@
     <meta name="theme-color" content="white"/>
     <title>Magazin</title>
     <link rel="icon" sizes="192x192" href="icon.png">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" href="ios-icon.png">
     <link rel="stylesheet" href="/stylesheets/lybrastoremainmenu.css">
     <link rel="stylesheet" href="/stylesheets/fonts.css">
@@ -103,13 +103,10 @@ settings
           <img src="/assets/lybra.png" width="90">
           <p> Lybra </p>
         </div>
+
       </a>
+      <button onclick="deferredPrompt.prompt()"></button>x
       </div>
     </div>
   </body>
   </html>
-  <script>
-  document.getElementById('themeSwitch').addEventListener('change', function(event){
-    (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
-  });
-</script>
