@@ -17,7 +17,6 @@ header{
 }
 body{
   font-family: 'Regular', sans-serif;
-  padding: 5px;
   text-indent: 10px;
   -webkit-filter: blur(0.000001px);
   -webkit-font-smoothing: antialised;
@@ -33,11 +32,11 @@ img {
   font-size: 20px;
 }
 .top h1 {
-  text-indent: 40px;
+  text-indent: 30px;
 }
 .top i {
   float: right;
-  margin-right: 10px;
+  margin-right: 30px;
   margin-top: -65px;
   width: 5%;
   font-size: 30px;

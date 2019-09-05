@@ -22,6 +22,9 @@ body{
   background-color: var(--fundal);
   color: var(--scris);
 }
+.top i{
+  color: var(--scris);
+}
 .elementofbar{
   border-color: var(--navigator);
   color: var(--textnavigator);
