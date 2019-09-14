@@ -7,7 +7,6 @@ body{
   margin-left: 10px;
   padding: 5px;
   text-indent: 10px;
-  -webkit-filter: blur(0.000001px);
   -webkit-font-smoothing: antialised;
 }
 img {

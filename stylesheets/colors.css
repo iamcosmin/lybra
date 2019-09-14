@@ -1,0 +1,60 @@
+:root {
+  --scris: black;
+  --fundal: white;
+  --despartitor: #f5f5f5;
+  --navigator: #de1b1b;
+  --textnavigator: #de1b1b;
+  --buton: #de1b1b;
+  --textbuton: white;
+  --credite: #b3b3b3;
+  --rosulybra: #de1b1b;
+}
+
+[data-theme="dark"] {
+    --scris: white;
+    --fundal: black;
+    --despartitor: #2e2e2e;
+    --navigator: #de1b1b;
+    --textnavigator: #de1b1b;
+    --buton: #de1b1b;
+    --textbuton: black;
+    --credite: #b3b3b3;
+    --rosulybra: #de1b1b;
+}
+
+header{
+    color: var(--scris);
+    background-color: var(--fundal);
+  }
+  body{
+    color: var(--scris);
+    background-color: var(--fundal);
+  }
+  .top{
+    background-color: var(--fundal);
+    color: var(--scris);
+  }
+  .top i{
+    color: var(--scris);
+  }
+  .elementofbar{
+    border-color: var(--navigator);
+    color: var(--textnavigator);
+  }
+  button {
+    background-color: var(--buton);
+    color: var(--textbuton);
+  }
+  .p {
+    color: var(--credite);
+  }
+  .basic {
+    color: var(--scris);
+  }
+  .install button{
+    background-color: var(--buton);
+    color: var(--textbuton);
+  }
+  .creator{
+    color: var(--rosulybra);
+  }
