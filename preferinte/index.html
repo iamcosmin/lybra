@@ -1,37 +1,32 @@
 <!DOCTYPE html>
  <html lang="ro">
   <head>
+    <title>Lybra</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="white"/>
-    <title>Preferințe</title>
+    <link rel="icon" sizes="192x192" href="icon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png">
     <link rel="stylesheet" href="/stylesheets/basic.css">
     <link rel="stylesheet" href="/stylesheets/fonts.css">
-    <link rel="stylesheet" href="/stylesheets/colors.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+    <script src="/scripts/index.js"></script>
     <link rel="shortcut icon" type="image/png" href="/icons/favicon.png"/>
   </head>
-   <header>
-    <center>
+<body>
       <div class="top">
        <h1>
         Preferințe
       </h1>
-      <a href="/preferinte/index.html">
-        <i class="material-icons">
-  settings
-  </i>
-     </a>
       </div>
-  </center>
-  </header>
-<body>
-  <p> Dark mode</p>
-  <a href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light">Dark mode</a>
+      <div class="optionst">
+        <h3>Mod întunecat</h3>
+        <p>Întunecați tot site-ul.</p>
+      </div>
+      <div class="optionnd">
+        <button onclick="activateDark()">Activati</button>
+      </div>
 </body>
-<script>
-  document.getElementById('themeSwitch').addEventListener('change', function(event){
-  (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
-});
-</script>
+</html>
