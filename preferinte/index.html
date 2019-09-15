@@ -28,11 +28,7 @@
   </header>
 <body>
   <p> Dark mode</p>
-  <div class="switch">
-    <input class="switch__input" type="checkbox" id="switchCheckbox1">
-    <label aria-hidden="true" class="switch__label" for="switchCheckbox1">On</label>
-    <div aria-hidden="true" class="switch__marker"></div>
-  </div>
+  <a href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light">Dark mode</a>
 </body>
 <script>
   document.getElementById('themeSwitch').addEventListener('change', function(event){
