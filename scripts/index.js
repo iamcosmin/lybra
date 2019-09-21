@@ -1,4 +1,3 @@
-alert("Momentan, Lybra este sub mentenanta. Incercati mai tarziu.");
 function activateDark() {
   localStorage.setItem(
     "mode",

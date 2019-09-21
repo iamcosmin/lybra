@@ -1,21 +1,11 @@
-const PRECACHE = "Fonts";
-const RUNTIME = "Runtime 1.0";
+const PRECACHE = "Weather";
+const RUNTIME = "Runtime";
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
   "/",
-  "/stylesheets/basic.css",
-  "/stylesheets/light.css",
-  "/stylesheets/dark.css",
-  "/stylesheets/fonts.css",
-  "/fonts/Bold.ttf",
-  "/fonts/BoldItalic.ttf",
-  "/fonts/Italic.ttf",
-  "/fonts/Medium.ttf",
-  "/fonts/MediumItalic.ttf",
-  "/fonts/Regular.ttf",
-  "/stylesheets/weather.css",
-  "/weather/index.html"
+  "./weather/index.html",
+  "./stylesheets/weather.css"
 ];
 
 // The install handler takes care of precaching the resources we always need.
