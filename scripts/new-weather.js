@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
       lat = position.coords.latitude;
 
       const proxy = "https://cors-anywhere.herokuapp.com/";
-      const api = `${proxy}https://api.darksky.net/forecast/6981364b3d2497d6e06a141a70deb78e/${lat}, ${long}`;
+      const api = `${proxy}http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=7374cf8473fde4c43ac651a22cd116d5`;
 
       fetch(api)
         .then(response => {
@@ -23,23 +23,14 @@ window.addEventListener("load", () => {
         })
         .then(data => {
           console.log(data);
-          const { temperature, summary, icon } = data.currently;
+          const { temp, icon } = data.main;
           //Set DOM Elements from the API
-          const fintemp = (temperature - 32) * (5 / 9);
+          const fintemp = temp - 273.15;
           temperatureDegree.textContent = Math.floor(fintemp);
-          temperatureDescription.textContent = summary;
-          locationTimezone.textContent = data.timezone;
-          //formula celsius
-          let celsius = (temperature - 32) * (5 / 9);
+          temperatureDescription.textContent = data.weather.main;
+          locationTimezone.textContent = data.name;
           //Set icon
-          setIcons(icon, document.querySelector(".icon"));
         });
     });
-  }
-  function setIcons(icon, iconID) {
-    const skycons = new Skycons({ color: "white" });
-    const currentIcon = icon.replace(/-/g, "_").toUpperCase();
-    skycons.play();
-    return skycons.set(iconID, Skycons[currentIcon]);
   }
 });
