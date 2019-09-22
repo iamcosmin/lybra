@@ -20,34 +20,48 @@
   </head>
   <body>
     <nav>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
+      <div class="topnav">
+        <a href="#home" class="active">LYBRA</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="store">Magazin</a>
+          <a href="prefs">Preferinte</a>
+          <a href="weather">Vreme</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="openNavBar()">
+          <i class="material-icons">
+            menu
+          </i>
+        </a>
       </div>
-      <ul class="nav-links">
-        <li><a href="/store/">Magazin</li></a>
-        <li><a href="/roadmap/">Planuri</li></a>
-        <li><a href="/preferinte/">Preferințe</li></a>
-      </ul>
     </nav>
-    <h1>Magazinul Lybra</h1>
-    <p>Un magazin ce va avea o gamă variată de produse.</p>
-    <button onclick="location.href='/store/'">Descoperă</button>
-    <h1>Roadmap</h1>
-    <p>Vedeți planurile noastre.</p>
-    <button onclick="location.href='#'">In curand...</button>
-    <h1>Gestionează preferințele</h1>
-    <p>O caracteristică ce vă permite să îmbunătățiți experiența dvs.</p>
-    <button onclick="location.href='/preferinte'">
-      Modificați preferințele
-    </button>
+    <h1>Lipseste ceva?</h1>
+    <p>
+     Apasa pe iconita cu linii de mai sus
+      pentru a accesa ce vrei.
+    </p>
+    <button></button>
+    <h1> Vreme</h1>
+    <p>E mai usor sa ai o vreme precisa. Acceseaza vremea din meniu.</p>
+    <button></button>
+    <h1> Dark mode</h1>
+    <P>Stiai ca este mai mult ca simplu sa activezi modul negru? Incearca din preferinte.</P></h1>
+    <button></button>
+    <h1> Iti doresti aplicatii?</h1>
+    <p>Suntem aici pentru tine! Acceseaza magazinul din meniu!</p>
+    <button></button>
     <link rel="stylesheet" href="/stylesheets/colors.css" />
     <link rel="stylesheet" href="/stylesheets/basic.css" />
     <link rel="stylesheet" href="/stylesheets/fonts.css" />
-    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css" />
     <script src="/scripts/index.js"></script>
     <script src="/scripts/hamburger.js"></script>
-    <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/ecf561ce574e80e6206dc9b1514a81d5_1.js" async></script>
+    <script
+      charset="UTF-8"
+      src="//cdn.sendpulse.com/js/push/ecf561ce574e80e6206dc9b1514a81d5_1.js"
+      async
+    ></script>
   </body>
 </html>
 <!-- Scripts -->
