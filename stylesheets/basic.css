@@ -143,20 +143,22 @@ button {
 /* Style the hamburger menu */
 .topnav .icon {
   background: #333;
-  display: block;
   position: absolute;
   right: 0;
   top: 0;
 }
+.topnav {
+  border-radius: 25px;
+}
 
 /* Style the active link (or home/logo) */
 .active {
-  color: black;
-  letter-spacing: 3px;
-  font-size: 25px;
+  margin-top: 5px;
 }
 .material-icons {
   display: inline-block;
+  margin-top: -3px;
+  font-size: 40px;
 }
 :root {
   /* Light */
