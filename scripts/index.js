@@ -1,5 +1,5 @@
 // Maintanance Break Tool
-const maintanance = "none";
+const maintanance = "long";
 let main = document.getElementById("main");
 let maintatancePack = document.getElementById("maintanance");
 let maintananceHeader = document.querySelector("h1");
