@@ -10,17 +10,6 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: #000000;
-  font-family: "Regular", sans-serif;
-  color: white;
-  overflow: scroll;
-}
-body.dark {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   background: -webkit-linear-gradient(
     to right,
     #5f2c82,
@@ -29,11 +18,21 @@ body.dark {
   background: linear-gradient(to right, #5f2c82, #49a09d);
   font-family: "Regular", sans-serif;
   color: white;
-  overflow: scroll;
+}
+body.dark {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #000000;
+  font-family: "Regular", sans-serif;
+  color: white;
 }
 .location,
 .temperature {
-  height: 90vh;
+  margin-bottom: 10px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -48,7 +47,7 @@ body.dark {
   cursor: pointer;
 }
 .degree-section span {
-  margin: 10px;
+  text-align: center;
   font-size: 40px;
 }
 .degree-section h2 {
@@ -58,34 +57,16 @@ body.dark {
 canvas {
   margin-left: 10px;
 }
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
+.temp-max,
+.temp-min {
+  font-size: 16px;
 }
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
+.temp-min {
+  margin-top: 20px;
 }
-
-/* Style navigati on menu links */
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
+.temp-max {
+  margin-top: 10px;
 }
-
-/* Style the hamburger menu */
-.topnav .icon {
-  background: #333;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 30px;
-}
-.topnav {
-  border-radius: 25px;
+.description {
+  margin-top: 20px;
 }

@@ -11,43 +11,28 @@
     />
   </head>
   <body>
-      <div id="maintanance">
-          <h1 class="maintanance-header">1</h1>
-          <p class="maintanance-paragraph">1</p>
-        </div>
-        <div id="main">
-      <nav>
-          <div class="topnav">
-            <img src="/assets/ico.png" class="active" width="50px"></img>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-              <a href="store">Magazin</a>
-              <a href="prefs">Preferinte</a>
-              <a href="weather">Vreme</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="openNavBar()">
-              <i class="material-icons">
-                menu
-              </i>
-            </a>
-          </div>
-        </nav>
-    <div class="location">
-      <h1 class="timezone">Se încarcă</h1>
-      <canvas class="icon" width="40" height="40"></canvas>
+    <div id="maintanance">
+      <h1 class="maintanance-header">1</h1>
+      <p class="maintanance-paragraph">1</p>
     </div>
-    <div class="temperature">
-      <div class="degree-section">
-        <h2 class="degree"></h2>
-        <span>°C</span>
+    <div id="main">
+      <div class="location">
+        <h1 class="timezone">Se încarcă</h1>
+        <canvas class="icon" width="40" height="40"></canvas>
       </div>
-      <div class="description">...</div>
+      <div class="temperature">
+        <div class="degree-section">
+          <h2 class="degree"></h2>
+          <span></span>
+        </div>
+        <h2 class="description"></h2>
+        <div class="temp-min"></div>
+        <div class="temp-max"></div>
+      </div>
+      <link rel="stylesheet" href="/stylesheets/weather.css" />
+      <link rel="stylesheet" href="/stylesheets/fonts.css" />
+      <script src="/scripts/new-weather.js"></script>
+      <script src="/scripts/index.js"></script>
     </div>
-    <link rel="stylesheet" href="/stylesheets/weather.css" />
-    <link rel="stylesheet" href="/stylesheets/fonts.css" />
-    <script src="/scripts/new-weather.js"></script>
-    <script src="/scripts/index.js"></script>
-</div>
   </body>
 </html>

@@ -4,14 +4,14 @@ window.addEventListener("load", () => {
   let temperatureDescription = document.querySelector(".description");
   let temperatureDegree = document.querySelector(".degree");
   let locationTimezone = document.querySelector(".timezone");
-  let temperatureSpan = document.querySelector(".temperature span");
+  let tempMin = document.querySelector(".temp-min");
+  let tempMax = document.querySelector(".temp-max");
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
 
-      const proxy = "https://cors-anywhere.herokuapp.com/";
       const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=7374cf8473fde4c43ac651a22cd116d5`;
       fetch(api)
         .then(response => {
@@ -19,13 +19,20 @@ window.addEventListener("load", () => {
         })
         .then(data => {
           console.warn(data);
-          const { temp } = data.main;
-          const { description, main, icon } = data.weather[0];
-          //Set DOM Elements from the API
-          const fintemp = temp - 273.15;
-          temperatureDegree.textContent = Math.floor(fintemp);
+          const {main} = data.weather[0]
+
+          temperatureDegree.textContent =
+            Math.floor(data.main.temp - 273.15) + "°C";
+
           locationTimezone.textContent =
-            data.name + "," + " ‍ " + data.sys.country;
+            data.name + "," + " " + data.sys.country;
+
+          tempMax.textContent =
+            "Maxima de" + " " + Math.floor(data.main.temp_min - 273.15) + "°C";
+
+          tempMin.textContent =
+            "Minima de" + " " + Math.floor(data.main.temp_max - 273.15) + "°C";
+
           if (main == "Thunderstorm") {
             temperatureDescription.textContent = "Furtuni";
           } else if (main == "Drizzle") {
