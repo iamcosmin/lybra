@@ -1,45 +1,68 @@
 window.addEventListener("load", () => {
   let long;
   let lat;
-  let temperatureDescription = document.querySelector(
-    ".temperature-description"
-  );
-  let temperatureDegree = document.querySelector(".temperature-degree");
-  let locationTimezone = document.querySelector(".location-timezone");
-  let temperatureSection = document.querySelector(".temperature");
-  let temperatureSpan = document.querySelector(".temperature span");
+  let temperatureDescription = document.querySelector(".description");
+  let temperatureDegree = document.querySelector(".degree");
+  let locationTimezone = document.querySelector(".timezone");
+  let tempMin = document.querySelector(".temp-min");
+  let tempMax = document.querySelector(".temp-max");
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
-
-      const proxy = "https://cors-anywhere.herokuapp.com/";
-      const api = `${proxy}https://api.darksky.net/forecast/6981364b3d2497d6e06a141a70deb78e/${lat}, ${long}`;
-
+      alert(long);
+      alert(lat);
+      const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=7374cf8473fde4c43ac651a22cd116d5`;
       fetch(api)
         .then(response => {
           return response.json();
         })
         .then(data => {
-          console.log(data);
-          const { temperature, summary, icon } = data.currently;
-          //Set DOM Elements from the API
-          const fintemp = (temperature - 32) * (5 / 9);
-          temperatureDegree.textContent = Math.floor(fintemp);
-          temperatureDescription.textContent = summary;
-          locationTimezone.textContent = data.timezone;
-          //formula celsius
-          let celsius = (temperature - 32) * (5 / 9);
-          //Set icon
-          setIcons(icon, document.querySelector(".icon"));
+          const { main } = data.weather[0];
+
+          temperatureDegree.textContent =
+            Math.floor(data.main.temp - 273.15) + "°C";
+
+          locationTimezone.textContent =
+            data.name + "," + " " + data.sys.country;
+
+          tempMax.textContent =
+            "Maxima de" + " " + Math.floor(data.main.temp_min - 273.15) + "°C";
+
+          tempMin.textContent =
+            "Minima de" + " " + Math.floor(data.main.temp_max - 273.15) + "°C";
+
+          if (main == "Thunderstorm") {
+            temperatureDescription.textContent = "Furtuni";
+          } else if (main == "Drizzle") {
+            temperatureDescription.textContent = "Burniță";
+          } else if (main == "Rain") {
+            temperatureDescription.textContent = "Plouă";
+          } else if (main == "Snow") {
+            temperatureDescription.textContent = "Ninge";
+          } else if (main == "Mist") {
+            temperatureDescription.textContent = "Aburi";
+          } else if (main == "Smoke") {
+            temperatureDescription.textContent = "Fum";
+          } else if (main == "Haze") {
+            temperatureDescription.textContent = "Ceață";
+          } else if (main == "Dust") {
+            temperatureDescription.textContent = "Praf";
+          } else if (main == "Ash") {
+            temperatureDescription.textContent = "Cenușă Vulcanică";
+          } else if (main == "Squall") {
+            temperatureDescription.textContent = "Vijelie";
+          } else if (main == "Tornado") {
+            temperatureDescription.textContent = "Tornadă";
+          } else if (main == "Clear") {
+            temperatureDescription.textContent = "Senin";
+          } else if (main == "Clouds") {
+            temperatureDescription.textContent = "Noros";
+          }
         });
     });
-  }
-  function setIcons(icon, iconID) {
-    const skycons = new Skycons({ color: "white", resizeClear: true });
-    const currentIcon = icon.replace(/-/g, "_").toUpperCase();
-    skycons.play();
-    return skycons.set(iconID, Skycons[currentIcon]);
+  } else {
+    console.error("PULA MEA!");
   }
 });

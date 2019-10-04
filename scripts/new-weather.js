@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
   let tempMin = document.querySelector(".temp-min");
   let tempMax = document.querySelector(".temp-max");
 
-  if (navigator.geolocation) {
+  if (navigator.geolocation.getCurrentPosition) {
     navigator.geolocation.getCurrentPosition(position => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
@@ -59,10 +59,10 @@ window.addEventListener("load", () => {
             temperatureDescription.textContent = "Senin";
           } else if (main == "Clouds") {
             temperatureDescription.textContent = "Noros";
-          } 
+          }
         });
     });
   } else {
-    locationTimezone.textContent = "Eroare!"
+    console.error("PULA MEA!");
   }
 });
