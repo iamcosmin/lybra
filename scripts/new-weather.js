@@ -12,14 +12,14 @@ window.addEventListener("load", () => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
 
-      const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=7374cf8473fde4c43ac651a22cd116d5`;
+      const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=7374cf8473fde4c43ac651a22cd116d5`;
       fetch(api)
         .then(response => {
           return response.json();
         })
         .then(data => {
           console.warn(data);
-          const {main} = data.weather[0]
+          const { main } = data.weather[0];
 
           temperatureDegree.textContent =
             Math.floor(data.main.temp - 273.15) + "°C";
