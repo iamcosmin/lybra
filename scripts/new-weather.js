@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
           return response.json();
         })
         .then(data => {
-          console.warn(data);
+          console.log(data);
           const { main } = data.weather[0];
 
           temperatureDegree.textContent =
@@ -59,8 +59,10 @@ window.addEventListener("load", () => {
             temperatureDescription.textContent = "Senin";
           } else if (main == "Clouds") {
             temperatureDescription.textContent = "Noros";
-          }
+          } 
         });
     });
+  } else {
+    locationTimezone.textContent = "Eroare!"
   }
 });
