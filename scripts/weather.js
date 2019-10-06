@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
   let tempMax = document.querySelector(".temp-max");
 
   if (navigator.geolocation.getCurrentPosition) {
-    navigator.geolocation.getCurrentPosition(position => {
+    navigator.geolocation.getCurrentPosition(position, {timeout:3000s} => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
       const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=7374cf8473fde4c43ac651a22cd116d5`;
