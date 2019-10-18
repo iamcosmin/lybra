@@ -1,32 +1,3 @@
-// Maintanance Break Tool
-const maintanance = "none";
-let main = document.getElementById("main");
-let maintatancePack = document.getElementById("maintanance");
-let maintananceHeader = document.querySelector("h1");
-let maintananceParagraph = document.querySelector("p");
-
-if (maintanance == "long") {
-  main.style.display = "none";
-  maintananceHeader.textContent = "Mentenanță în curs!";
-  maintananceParagraph.textContent = "Vom fi înapoi în 1 oră.";
-} else if (maintanance == "short") {
-  main.style.display = "none";
-  maintananceHeader.textContent = "Mentenanță în curs!";
-  maintananceParagraph.textContent =
-    "Vom fi înapoi în mai puțin de 30 de minute.";
-} else if (maintanance == "hotfix") {
-  main.style.display = "none";
-  maintananceHeader.textContent = "Mentenanță în curs!";
-  maintananceParagraph.textContent =
-    "Trebuie să rezolvăm o problemă critică. Va dura ceva.";
-} else if (maintanance == "scheduled") {
-  alert("Site-ul se închide în 5 minute pentru o scurtă mentenanță.");
-} else if (maintanance == "none") {
-  console.log("Nicio mentenanta planificata");
-  maintatancePack.style.display = "none";
-}
-//End of Maintanance Break Tool
-
 //Dark Mode Tool
 
 function activateDark() {
