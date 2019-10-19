@@ -1,5 +1,3 @@
-//Dark Mode Tool
-
 function activateDark() {
   localStorage.setItem(
     "mode",
