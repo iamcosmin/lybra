@@ -9,9 +9,16 @@ function onSignIn(googleUser) {
   console.log("Email: " + profile.getEmail());
   const conectatH1 = document.querySelector(".welcome-h1");
   const conectatP = document.querySelector(".welcome-p");
-    conectatH1.textContent = "Bine ai venit," + profile.getGivenName();
+  conectatH1.textContent = "Bine ai venit," + profile.getGivenName();
 
   // The ID token you need to pass to your backend:
   var id_token = googleUser.getAuthResponse().id_token;
   console.log("ID Token: " + id_token);
+}
+
+function signOut() {
+  var auth2 = gapi.auth2.getAuthInstance();
+  auth2.signOut().then(function() {
+    console.log("User signed out.");
+  });
 }
