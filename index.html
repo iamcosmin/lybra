@@ -34,11 +34,7 @@
           <a href="/services/lybra/music">NOU: Lybra Music</a>
           <a href="blog">NOU: Blog</a>
           <a href="prefs">Preferinte</a>
-          <div id="gSignInWrapper">
-          <div id="customBtn" class="customGPlusSignIn">
-          <a href="javascript:void(0);" data-onsuccess="onSignIn" class="buttonText">Autentificare</a>
-              </div>
-            </div>
+          <a href="javascript:void(0);" onclick="signOut()">Deconectare</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="openNavBar()">
@@ -53,6 +49,7 @@
     
     <h1 class="welcome-h1">Bine ai venit!</h1>
     <p class="welcome-p">Acum, te poti autentifica!</p>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <button></button>
 
     <h1>Nou! Blog!</h1>
