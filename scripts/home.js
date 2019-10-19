@@ -16,6 +16,25 @@ function signOut() {
     conectatP.textContent = "Pentru a te deconecta complet, reincarca pagina.";
   });
 }
+var googleUser = {};
+var startApp = function() {
+  gapi.load("auth2", function() {
+    // Retrieve the singleton for the GoogleAuth library and set up the client.
+    auth2 = gapi.auth2.init({
+      client_id:
+        "911328757384-9tgp16f249iqpef5m0q5724u0fr4dsac.apps.googleusercontent.com",
+      cookiepolicy: "single_host_origin"
+      // Request scopes in addition to 'profile' and 'email'
+      //scope: 'additional_scope'
+    });
+    attachSignin(document.getElementById("customBtn"));
+  });
+};
+
+function attachSignin(element) {
+  auth2.attachClickHandler(element, {});
+}
+startApp();
 //   console.log("ID: " + profile.getId());
 //   console.log("Full Name: " + profile.getName());
 //   console.log("Given Name: " + profile.getGivenName());
