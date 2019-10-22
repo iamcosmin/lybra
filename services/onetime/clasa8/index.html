@@ -8,20 +8,27 @@
     <title>Clasa a VIII-a: Incarca</title>
   </head>
   <body>
-      <h1 class="title">E mai frumos să fim împreună...</h1>
+    <div class="formdescription">
+      <h1 class="title">E mai frumos împreună...</h1>
       <p class="description">Am ajuns așa de departe...</p>
       <p class="description">De ce să nu sărbătorim?</p>
       <p class="description">Mai jos ai un formular. Completează-l, lasă niște imagini și lasă-mă pe mine să fac treaba!</p>
-    <form name="Pictures8" method="post" data-netlify="true" type="file">
+      </div>
+    <form name="Pictures8" method="post" data-netlify="true" type="files">
       <p>
-        <label>Numele tău: <input class="input" type="text" name="name"/></label>
+        <label>Numele <input class="input" type="text" name="name"/></label>
       </p>
       <p>
-        <label>Email: <input type="email" class="input" name="email"/></label>
+        <label>Email <input type="email" class="input" name="email"/></label>
       </p>
+      <p>
       <input type="file" style="height: 29px; color:white; background-color:var(--buton);"name="fileToUpload" class="btnmarg" id="fileToUpload" multiple></input>
+      </p>
+      <p>
       <input type="submit" value="Încarcă Imaginile" class="btn" name="submit"> </input>
+      </p>
     </form>
+    <p>Daca nu va descurcați cu acest formular, aflați de <a href="/help/forms/howto.html">aici</a> cum să încărcați.</p>
   </body>
   <script src="/scripts/index.js"></script>
 </html>
