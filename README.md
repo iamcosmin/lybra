@@ -1,4 +1,4 @@
-# lybra
+# Lybra
 Lybra este site-ul meu, Radu Cosmin Andrei, prin care puteti descarca aplicatii de creatie proprie, ca de exemplu Allo, Battle Stars sau Mine & Craft. Aplicatiile sunt moduri si lansate in beta.
 
 Site-ul este in constructie si este sustinut cu ajutorul celor de la netlify pe domeniul https://lybra.netlify.com/.
