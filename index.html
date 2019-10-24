@@ -11,6 +11,7 @@
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="911328757384-9tgp16f249iqpef5m0q5724u0fr4dsac.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="/scripts/authenticate.js"></script>
     <script src="/scripts/home.js"></script>
     <link
@@ -34,6 +35,7 @@
           <a href="/services/lybra/music">NOU: Lybra Music</a>
           <a href="blog">NOU: Blog</a>
           <a href="prefs">Preferinte</a>
+          <div style="list-style:none;" data-netlify-identity-menu></div>
           <a href="javascript:void(0);" onclick="signOut()">Deconectare</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -49,7 +51,6 @@
     
     <h1 class="welcome-h1">Bine ai venit!</h1>
     <p class="welcome-p">Acum, te poti autentifica!</p>
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <button></button>
 
     <h1>Nou! Blog!</h1>
