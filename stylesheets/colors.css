@@ -21,36 +21,44 @@
   --rosulybradark: #de1b1b;
   /* End */
 }
-body {
-  color: var(--scris);
-  background-color: var(--fundal);
-}
-body.dark {
-  color: var(--scrisdark);
-  background-color: var(--fundaldark);
-}
-nav{
-    color: var(--scris);
-    background-color: var(--fundal);
-}
-nav.dark{
+@media (prefers-color-scheme: dark) {
+  body {
     color: var(--scrisdark);
     background-color: var(--fundaldark);
+  }
+  nav {
+    color: var(--scrisdark);
+    background-color: var(--fundaldark);
+  }
+  .navigatore a {
+    color: var(--scrisdark);
+  }
 }
-button {
-  background-color: var(--buton);
-  color: var(--textbuton);
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--scris);
+    background-color: var(--fundal);
+  }
+
+  nav {
+    color: var(--scris);
+    background-color: var(--fundal);
+  }
+  .navigatore a {
+    color: var(--scris);
+  }
 }
-.p {
-  color: var(--credite);
-}
-.basic {
-  color: var(--scris);
-}
-.install button {
-  background-color: var(--buton);
-  color: var(--textbuton);
-}
-.creator {
-  color: var(--rosulybra);
+@media (prefers-color-scheme: no-preference) {
+  body {
+    color: var(--scris);
+    background-color: var(--fundal);
+  }
+
+  nav {
+    color: var(--scris);
+    background-color: var(--fundal);
+  }
+  .navigatore a {
+    color: var(--scris);
+  }
 }
