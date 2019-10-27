@@ -24,48 +24,31 @@
     />
     <link rel="shortcut icon" type="image/png" href="/assets/ico.png" />
   </head>
- 
-    <nav>
-      <div class="topnav">
-        <img src="assets/ico.png" class="active" width="50px"></img>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="store">Magazin</a>
-          <a href="/services/music">Lybra Music</a>
-          <a href="prefs">Preferinte</a>
+      <nav>
+        <div id="navigate" class="navigatore">
+          <img src="/assets/lybramusic.png" style="width: 50px;" />
+          <a href="/store/">Magazin</a>
+          <a href="/404.html">Blog</a>
+          <a href="/prefs/">Preferinte</a>
           <a href="#" onclick="netlifyIdentity.open()">Conectare</a>
+          <button onclick="openBar()">Meniu</button>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="openNavBar()">
-          <i class="material-icons">
-            menu
-          </i>
-        </a>
-    </nav>
-    <body>
-
-    <button></button>
-    
+      </nav>
+    <body id="body">
     <h1 class="welcome-h1">Bine ai venit!</h1>
-    <p class="welcome-p">Acum, te poti autentifica!</p>
-    <a data-netlify-identity-menu></a>
-    <button></button>
+    <p class="welcome-p">Acum, te poti autentifica! <br> Fă asta din meniu!</p>
 
     <h1>Nou! Blog!</h1>
     <p>În curând, o să aveți acces la blogul nostru.</p>
-    <button></button>
 
     <h1>Modul întunecat</h1>
     <p>Puteți activa modul întunecat din preferințe.</p>
-    <button></button>
 
     <h1> Iti doresti aplicatii?</h1>
-    <p>Suntem aici pentru tine! Acceseaza magazinul din meniu!</p>
-    <button></button>
+    <p>Suntem aici pentru tine! <br> Acceseaza magazinul din meniu!</p>
 
     <h1>Of...</h1>
     <p>Acum, Vreme Lybra nu mai există.</p>
-    <button></button>
 
   </div>
 </div>

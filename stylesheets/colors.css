@@ -33,6 +33,10 @@
   .navigatore a {
     color: var(--scrisdark);
   }
+  .navigatore button{
+    background-color: #5a5a5a;
+    color: white;
+  }
 }
 @media (prefers-color-scheme: light) {
   body {
@@ -47,6 +51,10 @@
   .navigatore a {
     color: var(--scris);
   }
+  .navigatore button{
+    background-color: rgb(231, 231, 231);
+    color: black;
+  }
 }
 @media (prefers-color-scheme: no-preference) {
   body {
@@ -60,5 +68,9 @@
   }
   .navigatore a {
     color: var(--scris);
+  }
+  .navigatore button{
+    background-color:rgb(231, 231, 231);
+    color: black;
   }
 }
