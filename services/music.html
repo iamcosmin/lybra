@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lybra Music</title>
     <link rel="stylesheet" href="/stylesheets/music.css" />
+    <script src="/scripts/login.js"></script>
   </head>
   <nav>
-    <div class="navigate">
-      <a href="/index.html">Acasa</a>
+    <div id="navigate" class="navigatore">
+      <img src="/assets/lybramusic.png" style="width: 50px;"/>
       <a href="/store/">Magazin</a>
       <a href="/404.html">Blog</a>
       <a href="/prefs/">Preferinte</a>
       <a href="#" onclick="netlifyIdentity.open()">Conectare</a>
+      <button onclick="openBar()">Menu</button>
     </div>
   </nav>
-  <body>
+  <body id="body">
     <h1>Muzică pentru toți</h1>
     <p>
       Acum un an, am lansat Lybra Music doar pentru voi, pentru cerința voastră.
@@ -48,6 +50,6 @@
     </p>
     <button>Profită acum! (in curand)</button>
     <p id="deftext"></p>
+    <script src="/scripts/music.js"></script>
   </body>
-  <script src="/scripts/index.js"></script>
 </html>

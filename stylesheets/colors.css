@@ -29,6 +29,16 @@ body.dark {
   color: var(--scrisdark);
   background-color: var(--fundaldark);
 }
+nav{
+    color: var(--scris);
+    background-color: var(--fundal);
+    z-index: 99;
+}
+nav.dark{
+    color: var(--scrisdark);
+    background-color: var(--fundaldark);
+    z-index: 99;
+}
 button {
   background-color: var(--buton);
   color: var(--textbuton);
