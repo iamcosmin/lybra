@@ -1,76 +1,43 @@
-:root {
-  /* Light */
-  --scris: black;
-  --fundal: white;
-  --despartitor: #f5f5f5;
-  --navigator: #de1b1b;
-  --textnavigator: #de1b1b;
-  --buton: #de1b1b;
-  --textbuton: white;
-  --credite: #b3b3b3;
-  --rosulybra: #de1b1b;
-  /* Dark */
-  --scrisdark: white;
-  --fundaldark: black;
-  --despartitordark: #2e2e2e;
-  --navigatordark: #de1b1b;
-  --textnavigatordark: #de1b1b;
-  --butondark: #de1b1b;
-  --textbutondark: black;
-  --creditedark: #b3b3b3;
-  --rosulybradark: #de1b1b;
-  /* End */
-}
 @media (prefers-color-scheme: dark) {
   body {
-    color: var(--scrisdark);
-    background-color: var(--fundaldark);
+    color: rgb(255, 255, 255);
+    background-color: black;
   }
   nav {
-    color: var(--scrisdark);
-    background-color: var(--fundaldark);
+    color: rgb(255, 255, 255);
+    background-color: black;
   }
   .navigatore a {
-    color: var(--scrisdark);
+    color: rgb(235, 235, 235);
   }
-  .navigatore button{
+  .navigatore button {
     background-color: #5a5a5a;
     color: white;
+  }
+  button {
+    background-color: rgb(185, 0, 0);
+    color: rgb(0, 0, 0);
   }
 }
 @media (prefers-color-scheme: light) {
   body {
-    color: var(--scris);
-    background-color: var(--fundal);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
   }
 
   nav {
-    color: var(--scris);
-    background-color: var(--fundal);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
   }
   .navigatore a {
-    color: var(--scris);
+    color: rgb(0, 0, 0);
   }
-  .navigatore button{
+  .navigatore button {
     background-color: rgb(231, 231, 231);
     color: black;
   }
-}
-@media (prefers-color-scheme: no-preference) {
-  body {
-    color: var(--scris);
-    background-color: var(--fundal);
-  }
-
-  nav {
-    color: var(--scris);
-    background-color: var(--fundal);
-  }
-  .navigatore a {
-    color: var(--scris);
-  }
-  .navigatore button{
-    background-color:rgb(231, 231, 231);
-    color: black;
+  button {
+    background-color: rgb(185, 0, 0);
+    color: rgb(0, 0, 0);
   }
 }
