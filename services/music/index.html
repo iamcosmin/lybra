@@ -10,9 +10,9 @@
   </head>
   <nav>
     <div id="navigate" class="navigationBar">
-      <img src="/assets/lybramusic.png" style="width: 50px;"/>
+      <img src="/assets/lybramusic.png" style="width: 50px;" />
       <a href="/store/">Magazin</a>
-      <a href="/404.html">Blog</a>
+      <a href="/services/music/">Lybra Music </a>
       <a href="/prefs/">Preferinte</a>
       <a href="#" onclick="netlifyIdentity.open()">Conectare</a>
       <button onclick="openBar()">Meniu</button>
@@ -48,7 +48,11 @@
       P.S: Serviciul este gratuit nu o lună, nu două, nu un an, ci pentru
       totdeauna!
     </p>
-    <button>Profită acum! (in curand)</button>
+    <button onclick="location.href='/redirect/lybra/music/main.html'">
+      Profită acum!
+    </button>
+    <div>.</div>
+    <button onclick="location.href='submit.html'">NOU! Sugerează Melodii</button>
     <p id="deftext"></p>
     <script src="/scripts/music.js"></script>
   </body>
