@@ -1,65 +1,101 @@
 @import "colors.css";
 @import "fonts.css";
+@import "navbar.css";
 
 body {
   font-family: "Regular Rounder", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
-form {
-  line-height: 200px;
-  height: 200px;
-  text-align: center;
-}
-form p {
-  line-height: 1.5;
-  vertical-align: middle;
-}
-div {
-  margin-bottom: 10px;
-}
-.title {
-  text-indent: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 25px;
-}
-.description {
-  font-size: 17.5px;
-  margin-bottom: -10px;
+h1 {
   margin-left: 20px;
-  margin-right: 20px;
-  text-indent: 5px;
+  margin-right: 20%;
+  font-size: 30px;
 }
-.btn {
-  height: 40px;
-  background-color: var(--buton);
-  color: white;
-  font-family: "Regular Rounder", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+p {
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 20px;
-  border: 0;
-  border-radius: 10px;
 }
-.btnmarg {
-  height: 40px;
-  background-color: var(--buton);
-  color: white;
-  font-family: "Regular Rounder", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  border: 0;
+input {
+  margin-top: 10px;
+  height: 5vh;
   border-radius: 10px;
-}
-.input {
-  height: 30px;
+  width: 85%;
+  background-color: rgb(77, 77, 77);
   color: white;
-  background-color: #2e2e2e;
-  border: 0;
-  border-radius: 10px;
   font-size: 20px;
   text-indent: 10px;
+  border: 0;
+
+  /* Top, Right, Bottom, Left */
 }
-label {
-  font-size: 20px;
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 40px;
+  height: 20px;
+  width: 20%;
+  float: left;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
