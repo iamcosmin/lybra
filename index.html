@@ -1,58 +1,33 @@
 <!DOCTYPE html>
-<html lang="ro">
-  <head>
-    <title>Lybra</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="white" />
-    <link rel="stylesheet" href="/stylesheets/home.css" />
-    <link rel="icon" sizes="192x192" href="icon.png" />
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="911328757384-9tgp16f249iqpef5m0q5724u0fr4dsac.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script type="text/javascript" src="/scripts/login.js"></script>
-    <script src="/scripts/home.js"></script>
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="/icons/icon-192x192.png"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" type="image/png" href="/assets/ico.png" />
-  </head>
-      <nav>
-        <div id="navigate" class="navigationBar">
-          <img src="/assets/lybramusic.png" style="width: 50px;" />
-          <a href="/store/">Magazin</a>
-          <a href="/services/music/">Lybra Music </a>
-          <a href="/prefs/">Preferinte</a>
-          <a href="#" onclick="netlifyIdentity.open()">Conectare</a>
-          <button onclick="openBar()">Meniu</button>
-        </div>
-      </nav>
-    <body id="body">
-    <h1 class="welcome-h1">Bine ai venit!</h1>
-    <p class="welcome-p">Acum, te poti autentifica! <br> Fă asta din meniu!</p>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-    <h1>Nou! Blog!</h1>
-    <p>În curând, o să aveți acces la blogul nostru.</p>
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Vanto">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-    <h1>Modul întunecat</h1>
-    <p>Puteți activa modul întunecat din preferințe.</p>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
-    <h1> Iti doresti aplicatii?</h1>
-    <p>Suntem aici pentru tine! <br> Acceseaza magazinul din meniu!</p>
-
-    <h1>Of...</h1>
-    <p>Acum, Vreme Lybra nu mai există.</p>
-
-  </div>
-</div>
-  </body>
+  <title>Vanto</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
 </html>
-<!-- Scripts -->
-<script src="/scripts/index.js"></script>
